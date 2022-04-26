@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   
+}
+header{
+    color: #fff;
+    background-color: rgb(170, 3, 3);
+    border: 1px solid black;
+    float: 50%;
+     height: 100px; 
+    width: 100%;
+}
+h3{
+    text-align: center;
+    padding-top: 2%;
+    contain: content ;
+    font-size: 2em;
+    
+}
+
+.retour{
+    font-size: 2em;
+    color:rgb(115, 10, 10);
+    margin-left: 900px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.bien{
+    color:rgb(190, 11, 11);
+    font-size: 2em;
+}
+
+ a{
+    text-decoration: none;   
+}
+.table caption-top{
+    color: rgb(196, 24, 24)!important;
+}
+h2{
+    color:rgb(27, 17, 2);
+    text-align: center;
+    margin-top: 50px;
+   
+}

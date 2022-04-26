@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titre{
+    background-color: rgb(170, 3, 3);
+    color: #fff;
+    text-align: center;
+    padding-top: 2%;
+    contain: content ;
+    font-size: 3em;
+    height: 100px;
+
+}
+
+.container .col {
+    width: 40%;
+    margin: 0px auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+input, textarea {
+    width: 50%;
+    height: 35px;
+}
+
+@media only screen and (max-width:1083px) {
+    .titre {
+        font-size: 2.5em;
+    }
+}
+

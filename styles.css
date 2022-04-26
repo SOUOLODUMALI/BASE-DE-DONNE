@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    color: #fff;
+    background-color: rgb(170, 3, 3);
+    border: 1px solid black;
+    float: 50%;
+     height: 100px; 
+    width: 100%;
+}
+h3{
+    text-align: center;
+    padding-top: 2%;
+    contain: content ;
+    font-size: 3em;
+
+}
+div{
+    margin-top: 7%;
+}
+.logo span{
+    font-size: 3em;
+    margin-left: 25%;
+    color:  rgb(170, 3, 3);
+}
+#abonne {
+display: flex;
+margin-top: 10%;
+margin-left: 30%;
+font-size: 2em;
+
+}
+.cas1{
+    color: rgb(170, 3, 3) ;
+    border: 2px solid black;
+    height: 90px;
+    width: 200px;
+}
+.cas2{
+    color: rgb(170, 3, 3) ; 
+    border: 2px solid black; 
+    margin-left: 5%;
+    height: 90px;
+    width: 250px;
+}
+.point{
+    opacity: 40%;
+}
+ a {
+    text-decoration: none;
+    color:green;   
+}

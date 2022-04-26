@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;   
+}
+
+header{
+    color: #fff;
+    background-color: rgb(170, 3, 3);
+    border: 1px solid black;
+    float: 50%;
+     height: 100px; 
+    width: 100%;
+}
+h3{
+    text-align: center;
+    padding-top: 2%;
+    contain: content ;
+    font-size: 2em;
+    
+}
+
+.tout{
+    align-content: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 40%;
+    
+}
