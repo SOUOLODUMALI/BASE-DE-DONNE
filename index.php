@@ -15,7 +15,7 @@
 </header>
 <SECtion id="primary">
     <div class="logo">
-       <img src="./logo auf.jpg" alt="logo" height="" width=""> 
+       <img src="./images/logo auf.jpg" alt="logo" height="" width=""> 
  <span>   Bienvenu cher adminstrateur</span>
     </div>
 </SECtion>
