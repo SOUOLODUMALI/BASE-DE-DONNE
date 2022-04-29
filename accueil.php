@@ -17,12 +17,12 @@
     </div>
     <div class="container">
         <div class="col">
-            <legend for="">Entrez votre pseudo</legend>
-            <input type="password" name="identifiant" id=""> <br> <br>
-            <legend for="">Entrez votre mot de passe</legend>
+            <legend for="">email</legend>
+            <input type="text" name="identifiant" id=""> <br> <br>
+            <legend for=""> mot de passe</legend>
             <input type="password" name="mot de passe" id=""> <br> 
             <br>
-            <a href="./enregistrement.php" ><input   type="submit" value="Entrer"></a>
+            <a href="./enregistrement.php" ><input   type="submit" value="Enregister"></a>
 
 
         </div>

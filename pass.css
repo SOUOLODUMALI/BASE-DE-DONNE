@@ -15,28 +15,19 @@
 
 }
 
-.container .col {
+.formulaire {
     width: 40%;
     margin: 0px auto;
     display: block;
     justify-content: center;
     text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px;
+    font-size: 20px;
+    color: rgb(170, 3, 3);
 
 }
+
 
 input, textarea {
     width: 50%;
     height: 35px;
 }
-
-@media only screen and (max-width:1083px) {
-    .titre {
-        font-size: 2.5em;
-    }
-}
-
