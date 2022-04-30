@@ -18,6 +18,9 @@
   <strong> BIENVENU CHER ADMINSTRATEUR</strong> <br> <br>
     Veuillez VOUS INSCRIRE
 </div>
+<?php
+            include("./connexion.php");
+            ?>
 <div class="form">
     <div class="container">
         <div class="col">
@@ -29,16 +32,13 @@
             <input type="text" name="mot de passe" id=""> <br> <br>
             <legend for=""> Mot de passe</legend>
             <input type="password" name="mot de passe" id=""> <br> <br>
-            <legend for="">confirmer votre mot de pass</legend>
-            <input type="password" name="mot de passe" id=""> <br> <br>
 
-            <a href="./enregistrement.php" ><input class="input"  type="submit" value="Enregistrer"></a>
-
-
+            <a href="./accueil.php" ><input class="input"  type="submit" value="Enregistrer"></a>
+            </div>   
         </div>
         
     </div>
-</div>
+        
 
 </body>
 </html>
