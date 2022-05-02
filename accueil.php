@@ -29,6 +29,7 @@
     </div>
 
 
+ <!-- if($_POST['mot_de_pass']==password_verify ($_POST['mot_de_pass'],$mot_de_pass)){ -->
      
 
 </body>

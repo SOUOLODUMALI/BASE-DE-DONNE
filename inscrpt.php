@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,26 +20,50 @@
     Veuillez VOUS INSCRIRE
 </div>
 <?php
-            include("./connexion.php");
-            ?>
+     include("./connexion.php");    
+       
+?>
+     
+ 
 <div class="form">
     <div class="container">
         <div class="col">
-            <legend for="">Nom</legend>
-            <input type="text" name="identifiant" id=""> <br> <br>
-            <legend for="">Prenom</legend>
-            <input type="text" name="mot de passe" id=""> <br> <br>
-            <legend for="">Email</legend>
-            <input type="text" name="mot de passe" id=""> <br> <br>
-            <legend for=""> Mot de passe</legend>
-            <input type="password" name="mot de passe" id=""> <br> <br>
-
-            <a href="./accueil.php" ><input class="input"  type="submit" value="Enregistrer"></a>
+       <form action="./transi.php" method="post">
+           <legend for="">nom</legend>
+            <input type="text" name="nom" id=""> <br> <br>
+            <legend for="">prenom</legend>
+            <input type="text" name="prenom" id=""> <br> <br>
+            <legend for="">email</legend>
+            <input type="text" name="email" id=""> <br> <br>
+            <legend for=""> mot_de_pass</legend>
+            <input type="password" name="mot_de_pass"> <br> <br>
+            <?php
+                    if(isset($non)){
+                        echo "<div class='alert alert-danger'>
+                        <strong>Erreur!</strong> les mots de passe ne sont pas identiques
+                        </div>";
+                    }
+                    ?>
+            <input   type="submit" value="Enregistrer" name="submit">  
+          <a href="./accueil.php" ></a>
+       
             </div>   
         </div>
         
     </div>
-        
-
+  
 </body>
+<script>
+    let form =document.getElementById('form');
+    form.addEventListener("submit", function (event) {
+        if(form.mot_de_pass.value != form.mot_de_pass1.value){
+            alert("les mots de passe ne sont pas identiques");
+            form.mot_de_pass.value = "";
+            form.mot_de_pass1.value = "";
+            event.preventDefault();
+            form.mot_de_pass.focus();
+        }
+    });
+
+</script>     
 </html>
