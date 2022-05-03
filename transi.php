@@ -26,33 +26,44 @@ $conn=mysqli_connect('localhost','root','','base_donne_eauf')or die("error");
 
 if(isset($_POST["submit"])) {
     
-    $nom=htmlentities(trim( $_POST["nom"]));
-    $prenom=htmlentities(trim($_POST["prenom"]));
-    $email=htmlentities(trim($_POST["email"]));
-    $mot_de_pass=password_hash($_POST["mot_de_pass"],PASSWORD_DEFAULT);
-    $mot_de_pass=md5($mot_de_pass);
-
-   
-
+    $nom=( $_POST["nom"]);
+    $prenom=($_POST["prenom"]);
+    $email=($_POST["email"]);
+   $mot_de_pass=($_POST["mot_de_pass"]);
+   $mot_de_pass2=($_POST["mot_de_pass2"]);
+    
     
 
-    if(!empty($nom) AND !empty($prenom)
-AND !empty($email) AND !empty($mot_de_pass)){
-   
-    $query='INSERT INTO admins(nom, prenom,  email , mot_de_pass)
-     VALUES ("'.$nom.'","'.$prenom.'","'.$email.'","'.$mot_de_pass.'")'
-     or die('erreur:'.mysql_error());
+
+if($mot_de_pass == $mot_de_pass2 ){
+ echo "ok";
+ if(!empty($nom) AND !empty($prenom)
+ AND !empty($email) AND !empty($mot_de_pass) AND !empty($mot_de_pass2)){
     
-    $res=mysqli_query($conn, $query);
+     $query=" INSERT INTO admins ( nom, prenom,  email , mot_de_pass)
+      VALUES ( '$nom', '$prenom', '$email', md5('$mot_de_pass'))";
+      
+      $res=mysqli_query($conn, $query);
     
-        
+     
+         
        echo "ok!";
-       header("location: ./accueil.php");
-    
-}
-   else  echo "erreur, un champs est vide";
   
+     
+ }
+
+    header("location: ./accueil.php");  
+   exit;
 }
+   
+else{
+    echo"erreur sur le mot de pass";
+    
+    header("location: ./inscrpt.php"); 
+    exit;
+} 
+}    
+
 
 ?>
 </body>

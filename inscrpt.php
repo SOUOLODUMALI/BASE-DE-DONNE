@@ -37,6 +37,8 @@
             <input type="text" name="email" id=""> <br> <br>
             <legend for=""> mot_de_pass</legend>
             <input type="password" name="mot_de_pass"> <br> <br>
+            <legend for="">confirme le mot_de_pass</legend>
+            <input type="password" name="mot_de_pass2"> <br> <br>
             <?php
                     if(isset($non)){
                         echo "<div class='alert alert-danger'>
